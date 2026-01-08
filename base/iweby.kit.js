@@ -142,6 +142,8 @@ class iwebyKit {
 
             // Call function
             setTimeout(function() {
+                document.body.style.setProperty('--iscrollbar-width', (window.innerWidth - thisInstance.viewerWidth + 'px')),
+                
                 setViewMode(thisInstance.viewerWidth);
                 
                 //console.log('DOM done');
