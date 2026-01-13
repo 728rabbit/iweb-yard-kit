@@ -665,7 +665,7 @@ class iwebyKit {
         
                         const deleteBtn = document.createElement('a');
                         deleteBtn.setAttribute('data-index', i);
-                        deleteBtn.innerHTML = '<i class="fa fa-times"></i>';
+                        deleteBtn.innerHTML = '<i class="fa fa-times" aria-hidden="true"></i>';
                         
                         deleteBtn.addEventListener('click', function(e){
                             const btnTarget = e.target;
@@ -2171,10 +2171,10 @@ class iwebyKit {
                 maxFileSize: 64,
                 typeErrorMessage: thisInstance.language[thisInstance.currentLangCode]['errorFileType'],
                 maxErrorMessage: thisInstance.language[thisInstance.currentLangCode]['errorMaxFileSize'],
-                btnStartAll: '<i class="fa fa-cloud-upload"></i>',
-                btnClose: '<i class="fa fa-close"></i>',
-                btnStart: '<i class="fa fa-cloud-upload"></i>',
-                btnRemove: '<i class="fa fa-trash"></i>',
+                btnStartAll: '<i class="fa fa-cloud-upload" aria-hidden="true"></i>',
+                btnClose: '<i class="fa fa-close" aria-hidden="true"></i>',
+                btnStart: '<i class="fa fa-cloud-upload" aria-hidden="true"></i>',
+                btnRemove: '<i class="fa fa-trash" aria-hidden="true"></i>',
                 autoClose: false
             };
             if (thisInstance.isValue(options)) {
@@ -2300,10 +2300,10 @@ class iwebyKit {
                 maxFileSize: 64,
                 typeErrorMessage: thisInstance.language[thisInstance.currentLangCode]['errorFileType'],
                 maxErrorMessage: thisInstance.language[thisInstance.currentLangCode]['errorMaxFileSize'],
-                btnStartAll: '<i class="fa fa-cloud-upload"></i>',
-                btnClose: '<i class="fa fa-close"></i>',
-                btnStart: '<i class="fa fa-cloud-upload"></i>',
-                btnRemove: '<i class="fa fa-trash"></i>',
+                btnStartAll: '<i class="fa fa-cloud-upload" aria-hidden="true"></i>',
+                btnClose: '<i class="fa fa-close" aria-hidden="true"></i>',
+                btnStart: '<i class="fa fa-cloud-upload" aria-hidden="true"></i>',
+                btnRemove: '<i class="fa fa-trash" aria-hidden="true"></i>',
                 autoClose: false
             };
             if (thisInstance.isValue(options)) {
@@ -2328,12 +2328,12 @@ class iwebyKit {
                 startAllButton.className = 'start-all';
                 startAllButton.type = 'button';
                 startAllButton.title = 'Start All';
-                startAllButton.innerHTML = '<i class="fa fa-cloud-upload"></i>';
+                startAllButton.innerHTML = '<i class="fa fa-cloud-upload" aria-hidden="true"></i>';
 
                 const closeAllButton = document.createElement('button');
                 closeAllButton.className = 'close';
                 closeAllButton.type = 'button';
-                closeAllButton.innerHTML = '<i class="fa fa-close"></i>';
+                closeAllButton.innerHTML = '<i class="fa fa-close" aria-hidden="true"></i>';
 
                 const listContainer = document.createElement('div');
                 listContainer.classList.add('list');
@@ -2425,26 +2425,26 @@ class iwebyKit {
         } 
         else {
             const fileIcons = {
-                pdf: '<i class="fa fa-file-pdf-o" style="color:#ef4130;"></i>',
-                doc: '<i class="fa fa-file-word-o" style="color:#5091cd;"></i>',
-                docx: '<i class="fa fa-file-word-o" style="color:#5091cd;"></i>',
-                xls: '<i class="fa fa-file-excel-o" style="color:#66cdaa;"></i>',
-                xlsx: '<i class="fa fa-file-excel-o" style="color:#66cdaa;"></i>',
-                ppt: '<i class="fa fa-file-powerpoint-o" style="color:#f7b002;"></i>',
-                pptx: '<i class="fa fa-file-powerpoint-o" style="color:#f7b002;"></i>',
-                txt: '<i class="fa fa-file-text-o"></i>',
-                avi: '<i class="fa fa-file-video-o" style="color:#5091cd;"></i>',
-                mov: '<i class="fa fa-file-video-o" style="color:#5091cd;"></i>',
-                mp4: '<i class="fa fa-file-video-o" style="color:#5091cd;"></i>',
-                ogg: '<i class="fa fa-file-video-o" style="color:#5091cd;"></i>',
-                wmv: '<i class="fa fa-file-video-o" style="color:#5091cd;"></i>',
-                webm: '<i class="fa fa-file-video-o" style="color:#5091cd;"></i>',
-                mp3: '<i class="fa fa-file-audio-o" style="color:#66cdaa;"></i>',
-                wav: '<i class="fa fa-file-audio-o" style="color:#66cdaa;"></i>',
-                rar: '<i class="fa fa-file-zip-o" style="color:#f7b002;"></i>',
-                zip: '<i class="fa fa-file-zip-o" style="color:#f7b002;"></i>'
+                pdf: '<i class="fa fa-file-pdf-o" aria-hidden="true" style="color:#ef4130;"></i>',
+                doc: '<i class="fa fa-file-word-o" aria-hidden="true" style="color:#5091cd;"></i>',
+                docx: '<i class="fa fa-file-word-o" aria-hidden="true" style="color:#5091cd;"></i>',
+                xls: '<i class="fa fa-file-excel-o" aria-hidden="true" style="color:#66cdaa;"></i>',
+                xlsx: '<i class="fa fa-file-excel-o" aria-hidden="true" style="color:#66cdaa;"></i>',
+                ppt: '<i class="fa fa-file-powerpoint-o" aria-hidden="true" style="color:#f7b002;"></i>',
+                pptx: '<i class="fa fa-file-powerpoint-o" aria-hidden="true" style="color:#f7b002;"></i>',
+                txt: '<i class="fa fa-file-text-o" aria-hidden="true"></i>',
+                avi: '<i class="fa fa-file-video-o" aria-hidden="true" style="color:#5091cd;"></i>',
+                mov: '<i class="fa fa-file-video-o" aria-hidden="true" style="color:#5091cd;"></i>',
+                mp4: '<i class="fa fa-file-video-o" aria-hidden="true" style="color:#5091cd;"></i>',
+                ogg: '<i class="fa fa-file-video-o" aria-hidden="true" style="color:#5091cd;"></i>',
+                wmv: '<i class="fa fa-file-video-o" aria-hidden="true" style="color:#5091cd;"></i>',
+                webm: '<i class="fa fa-file-video-o" aria-hidden="true" style="color:#5091cd;"></i>',
+                mp3: '<i class="fa fa-file-audio-o" aria-hidden="true" style="color:#66cdaa;"></i>',
+                wav: '<i class="fa fa-file-audio-o" aria-hidden="true" style="color:#66cdaa;"></i>',
+                rar: '<i class="fa fa-file-zip-o" aria-hidden="true" style="color:#f7b002;"></i>',
+                zip: '<i class="fa fa-file-zip-o" aria-hidden="true" style="color:#f7b002;"></i>'
             };
-            photoDiv.innerHTML = fileIcons[extension] || '<i class="fa fa-file-code-o"></i>';
+            photoDiv.innerHTML = fileIcons[extension] || '<i class="fa fa-file-code-o" aria-hidden="true"></i>';
         }
 
         itemDiv.appendChild(photoDiv);
@@ -2497,14 +2497,14 @@ class iwebyKit {
             const startButton = document.createElement('button');
             startButton.type = 'button';
             startButton.classList.add('start');
-            startButton.innerHTML = '<i class="fa fa-cloud-upload"></i>';
+            startButton.innerHTML = '<i class="fa fa-cloud-upload" aria-hidden="true"></i>';
             itemDiv.appendChild(startButton);
         }
 
         const removeButton = document.createElement('button');
         removeButton.type = 'button';
         removeButton.classList.add('remove');
-        removeButton.innerHTML = '<i class="fa fa-trash"></i>';
+        removeButton.innerHTML = '<i class="fa fa-trash" aria-hidden="true"></i>';
         itemDiv.appendChild(removeButton);
 
         const dropzone = thisInstance.isValue(fileInputID) ?
