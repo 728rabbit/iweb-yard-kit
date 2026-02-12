@@ -1,11 +1,11 @@
 <link href="base/icons/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 <link href="base/iweby.kit.min.css" rel="stylesheet" type="text/css">
 <script src="base/iweby.kit.min.js" type="text/javascript"></script>
-<script>const iweb = (new iwebyKit()).init();</script>
+<script>const iweby = (new iwebyKit()).init();</script>
 
 --------------------------------------------------------------------------------
 
-1. Input - iweb.inputBox();
+1. Input - iweby.inputBox();
 
 <input type="text" name="name" data-validation="required" value="">
 
@@ -28,7 +28,7 @@
 <input type="text" name="amount" data-validation="required|gt0" value="100">
 --------------------------------------------------------------------------------
 
-2. Autocomplete - iweb.inputBox();
+2. Autocomplete - iweby.inputBox();
 
 <input type="text" class="fill-id" name="member_id" value="1" 
     data-cannew="1"
@@ -55,15 +55,15 @@ json_encode([
 
 --------------------------------------------------------------------------------
 
-3. Select - iweb.selectBox();
+3. Select - iweby.selectBox();
 
 <select name="professionals[]" data-validation="required" data-virtual="1" data-filter="1" multiple></select>
 
 --------------------------------------------------------------------------------
 
-4. Checkbox - iweb.checkBox();
+4. Checkbox - iweby.checkBox();
 
-<div class="iweb-checkbox-set">
+<div class="iweby-checkbox-set">
     <div>
         <input type="checkbox" id="promotional_method_1" name="promotional_method[]" value="email" data-validation="required" checked>
         <label for="promotional_method_1">Email</label>
@@ -82,9 +82,9 @@ json_encode([
 
 --------------------------------------------------------------------------------
 
-5. Raido - iweb.radioBox();
+5. Raido - iweby.radioBox();
 
-<div class="iweb-radio-set">
+<div class="iweby-radio-set">
     <div>
         <input type="radio" id="male" name="gender" value="male" data-validation="required">
         <label for="male">M</label>
@@ -98,15 +98,15 @@ json_encode([
 
 --------------------------------------------------------------------------------
 
-6. Responsive Div - iweb.responsive();
+6. Responsive Div - iweby.responsive();
 
-<div class="iweb-responsive" data-width="1280" data-height="712"></div>
+<div class="iweby-responsive" data-width="1280" data-height="712"></div>
 
 --------------------------------------------------------------------------------
 
 7. Post & get
 
-iweb.doPost({
+iweby.doPost({
     dataType: 'json',
     url: your_url_here,
     payload: {
@@ -117,7 +117,7 @@ iweb.doPost({
     console.log(responseData);
 });
 
-iweb.doFetch({
+iweby.doFetch({
     dataType: 'json',
     url: your_url_here,
     payload: {
@@ -130,7 +130,7 @@ iweb.doFetch({
 
 --------------------------------------------------------------------------------
 
-8. Ajax Form - iweb.initForm();
+8. Ajax Form - iweby.initForm();
 
 <form data-ajax="1"></form>
 
@@ -143,8 +143,8 @@ iweb.doFetch({
 
 9. Ajax Upload
 
-iweb.bindEvent('click', '#btn-select-files', function(target, e) {
-    iweb.uploader({
+iweby.bindEvent('click', '#btn-select-files', function(target, e) {
+    iweby.uploader({
         url: your_url_here,
         payload: {
             name: 'abc'
@@ -161,7 +161,7 @@ Or
 
 <div><input type="file" id="myfiles"></div>
 
-iweb.uploaderArea('myfiles', {
+iweby.uploaderArea('myfiles', {
     url: your_url_here,
     payload: {
         name: 'abc'
@@ -175,7 +175,7 @@ iweb.uploaderArea('myfiles', {
 
 --------------------------------------------------------------------------------
 
-10. Pagination - iweb.pagination('div.mypage');
+10. Pagination - iweby.pagination('div.mypage');
 
 <div class="mypage" data-totalpage="10"></div>
 
@@ -265,65 +265,64 @@ randomString(length)
 
 16. Callback - DOMContentLoaded
 
-function iwebCommonLayout(function(win_width) { });
+function iwebyCommonLayout(function(win_width) { });
 
-function iwebLayout(function(win_width) { });
+function iwebyLayout(function(win_width) { });
 
-function iwebChildLayout(function(win_width) { });
+function iwebyChildLayout(function(win_width) { });
 
-function iwebExtraLayout(function(win_width) { });
+function iwebyExtraLayout(function(win_width) { });
 
 
-function iwebCommonFunc(function() { });
+function iwebyCommonFunc(function() { });
 
-function iwebFunc(function() { });
+function iwebyFunc(function() { });
 
-function iwebChildFunc(function() { });
+function iwebyChildFunc(function() { });
 
-function iwebExtraFunc(function() { });
+function iwebyExtraFunc(function() { });
 
 --------------------------------------------------------------------------------
 
 17. Callback - windowLoaded
 
-function iwebCommonLayoutEnd(function(win_width) { });
+function iwebyCommonLayoutEnd(function(win_width) { });
 
-function iwebLayoutEnd(function(win_width) { });
+function iwebyLayoutEnd(function(win_width) { });
 
-function iwebChildEnd(function(win_width) { });
+function iwebyChildEnd(function(win_width) { });
 
-function iwebExtraLayoutEnd(function(win_width) { });
+function iwebyExtraLayoutEnd(function(win_width) { });
 
 
-function iwebCommonFuncEnd(function() { });
+function iwebyCommonFuncEnd(function() { });
 
-function iwebFuncEnd(function() { });
+function iwebyFuncEnd(function() { });
 
-function iwebChildFuncEnd(function() { });
+function iwebyChildFuncEnd(function() { });
 
-function iwebExtraFuncEnd(function() { });
+function iwebyExtraFuncEnd(function() { });
 
 --------------------------------------------------------------------------------
 
 18. Callback - windowResize
 
-function iwebCommonLayout(function(win_width) { });
+function iwebyCommonLayout(function(win_width) { });
 
-function iwebLayout(function(win_width) { });
+function iwebyLayout(function(win_width) { });
 
-function iwebChildLayout(function(win_width) { });
+function iwebyChildLayout(function(win_width) { });
 
-function iwebExtraLayout(function(win_width) { });
+function iwebyExtraLayout(function(win_width) { });
 
 --------------------------------------------------------------------------------
 
 19. Callback - windowScroll
 
-function iwebCommonScroll(function(scroll_top) { });
+function iwebyCommonScroll(function(scroll_top) { });
 
-function iwebScroll(function(scroll_top) { });
+function iwebyScroll(function(scroll_top) { });
 
-function iwebChildScroll(function(scroll_top) { });
+function iwebyChildScroll(function(scroll_top) { });
 
-
-function iwebExtraScroll(function(scroll_top) { });
+function iwebyExtraScroll(function(scroll_top) { });
