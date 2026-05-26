@@ -1611,7 +1611,9 @@ class iwebyKit {
             includedToken: true,
             dataType: 'json',
             showBusy: true,
-            multiThread: false
+            multiThread: false,
+            bearerToken: '',
+            xAuthToken: ''
         }, requestData);
  
         if (requestData.multiThread) {
@@ -1708,6 +1710,16 @@ class iwebyKit {
                 // Use XMLHttpRequest for progress tracking
                 const xhr = new XMLHttpRequest();
                 xhr.open(requestData.method, requestData.url, true);
+
+                // Standard JWT/Bearer Token
+                if (requestData.bearerToken) {
+                    xhr.setRequestHeader('Authorization', 'Bearer ' + requestData.bearerToken);
+                }
+                
+                // Use a custom header name (e.g., X-Auth-Token).
+                if (requestData.xAuthToken) {
+                    xhr.setRequestHeader('X-Auth-Token', requestData.xAuthToken);
+                }
 
                 // Monitor upload progress
                 xhr.upload.onprogress = function(event) {
